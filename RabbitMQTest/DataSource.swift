@@ -12,7 +12,7 @@ import RMQClient
 class DataSource: NSObject {
     
     //let _url: String = "amqp://guest:guest@192.168.1.137:32829"
-    let _url: String = "amqp://admin:admin@192.168.1.67:32770"
+    let _url: String = "amqp://admin:admin@192.168.1.67:32771"
     private static let EXCHANGE: String = "Tchat"
     
     public static let KEY_ROOT: String = "Tchat"
