@@ -21,12 +21,12 @@ class UsersDataSourceMock : UsersDataSourceProtocol {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             
             self._users.append((key: "*", value:User(uid:1, name:"Global")))
-            self._users.append((key: "tchat.topic1", value:User(uid:1, name:"Topic 1")))
-            self._users.append((key: "tchat.topic2", value:User(uid:1, name:"Topic 2")))
-            self._users.append((key: "tchat.topic3", value:User(uid:1, name:"Topic 3")))
-            self._users.append((key: "tchat.topic4", value:User(uid:1, name:"Topic 4")))
-            self._users.append((key: "tchat.topic5", value:User(uid:1, name:"Topic 5")))
-            self._users.append((key: "tchat.topic6", value:User(uid:1, name:"Topic 6")))
+            self._users.append((key: "topic1", value:User(uid:1, name:"Topic 1")))
+            self._users.append((key: "topic2", value:User(uid:1, name:"Topic 2")))
+            self._users.append((key: "topic3", value:User(uid:1, name:"Topic 3")))
+            self._users.append((key: "topic4", value:User(uid:1, name:"Topic 4")))
+            self._users.append((key: "topic5", value:User(uid:1, name:"Topic 5")))
+            self._users.append((key: "topic6", value:User(uid:1, name:"Topic 6")))
             
             completionHandler(self._users)
         }
