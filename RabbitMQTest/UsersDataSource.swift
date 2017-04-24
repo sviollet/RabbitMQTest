@@ -13,7 +13,6 @@ class UsersDataSource : UsersDataSourceProtocol{
     
     var _users: [(key: String, value: User)] = []
     
-    
     init() { }
     
     func load(completionHandler:@escaping ([(key: String, value: User)]) -> Void) {
