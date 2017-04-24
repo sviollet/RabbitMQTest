@@ -1,3 +1,3 @@
 # RabbitMQTest
 
-branche de dev edité depuis Github
+branche de dev édité depuis Github
