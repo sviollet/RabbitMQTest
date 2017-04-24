@@ -113,20 +113,20 @@ class ViewController: UIViewController {
         
         let kbSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! CGRect).size
         
-        let keyboardFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as! CGRect)
-        let keyboard = self.view.convert(keyboardFrame, from: self.view.window)
-        let height = self.view.frame.size.height
+        //let keyboardFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as! CGRect)
+        //let keyboard = self.view.convert(keyboardFrame, from: self.view.window)
+        //let height = self.view.frame.size.height
         /*
          CGRect keyboardFrame = [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
         CGRect keyboard = [self.view convertRect:keyboardFrame fromView:self.view.window];
         CGFloat height = self.view.frame.size.height;
         */
         
-        if ((keyboard.origin.y + keyboard.size.height) > height) {
+        //if ((keyboard.origin.y + keyboard.size.height) > height) {
             self.keyboardOpen = !self.keyboardOpen;
             
             (self.keyboardOpen) ? self.genericMoveKeyBoard(keyboardHeight: -kbSize.height) : self.genericMoveKeyBoard(keyboardHeight: kbSize.height)
-        }
+        //}
     }
     
     func genericMoveKeyBoard(keyboardHeight: CGFloat) {
