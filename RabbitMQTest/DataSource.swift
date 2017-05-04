@@ -11,14 +11,20 @@ import RMQClient
 
 class DataSource: NSObject {
     
-    //let _url: String = "amqp://guest:guest@192.168.1.137:32829"
-    let _url: String = "amqp://admin:admin@192.168.1.67:32770"
-    private static let EXCHANGE: String = "Tchat"
+    private var ip: String = ""
+    private var port: String = ""
+    private var _url: String {
+        
+        get {
+            return String(format: "amqp://admin:admin@%@:%@", self.ip, self.port)
+        }
+    }
     
     public static let KEY_ROOT: String = "Tchat"
     public static let KEY_MESSAGE: String = "Message"
     
     //=== PRIVATE ====================================
+    private static let EXCHANGE: String = "Tchat"
     private let _queue: String
     private let _exchange: String
     private let _history: QueueHistory = QueueHistory()
@@ -40,6 +46,9 @@ class DataSource: NSObject {
         
         self._exchange = DataSource.EXCHANGE
         self._queue = AlarmeSystem.shared.user
+        
+        self.ip = UserDefaults.standard.string(forKey: "adress_preference")!
+        self.port = UserDefaults.standard.string(forKey: "port_preference")!
         
         super.init()
     }
@@ -63,7 +72,8 @@ class DataSource: NSObject {
         
         //userProperty.setValue("test", forKey: "user_id")
         
-        
+        let test = AlarmHelper()
+        test.test()
         
         //x.publish(message.data(using: .utf8), routingKey: routingKey, properties: [userProperty])
         
