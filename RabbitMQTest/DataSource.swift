@@ -16,6 +16,8 @@ class DataSource: NSObject {
     private var _url: String {
         
         get {
+            
+            
             return String(format: "amqp://admin:admin@%@:%@", self.ip, self.port)
         }
     }
