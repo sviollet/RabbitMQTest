@@ -14,7 +14,7 @@
         <!--Liste channel-->
         <scene sceneID="rdh-Dk-m9W">
             <objects>
-                <tableViewController title="Liste channel" id="5v9-Ok-b2n" customClass="ContactsTableViewController" customModule="Alarm" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Liste channel" id="5v9-Ok-b2n" customClass="ContactsTableViewController" customModule="RabbitMQTest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZTJ-Aa-NPA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,7 +70,7 @@
         <!--Authentification-->
         <scene sceneID="Zr0-tt-NtH">
             <objects>
-                <viewController title="Authentification" id="7s7-2R-pkZ" customClass="LoginViewController" customModule="Alarm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Authentification" id="7s7-2R-pkZ" customClass="LoginViewController" customModule="RabbitMQTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="agE-m2-aOC"/>
                         <viewControllerLayoutGuide type="bottom" id="7FS-Uz-CDY"/>
@@ -103,7 +103,7 @@
                                             <segue destination="5v9-Ok-b2n" kind="show" id="aFH-ju-yWr"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5vL-zy-XR2" userLabel="From" customClass="FromView" customModule="Alarm" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5vL-zy-XR2" userLabel="From" customClass="FromView" customModule="RabbitMQTest" customModuleProvider="target">
                                         <rect key="frame" x="8" y="8" width="50" height="50"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="from.png" translatesAutoresizingMaskIntoConstraints="NO" id="yPg-32-R5O">
@@ -153,24 +153,24 @@
         <!--Messages Table View Controller-->
         <scene sceneID="4xq-We-jQS">
             <objects>
-                <tableViewController storyboardIdentifier="MessagesViewController" id="Rhr-iJ-yiq" customClass="MessagesTableViewController" customModule="Alarm" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MessagesViewController" id="Rhr-iJ-yiq" customClass="MessagesTableViewController" customModule="RabbitMQTest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="uyu-gn-bOH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="508"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SendMessageCell" id="GE2-0V-3Jn" customClass="MessageTableViewCell" customModule="Alarm" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SendMessageCell" id="GE2-0V-3Jn" customClass="MessageTableViewCell" customModule="RabbitMQTest" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GE2-0V-3Jn" id="8eh-Ob-b1I">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkC-ff-wES" customClass="MessageView" customModule="Alarm" customModuleProvider="target">
-                                            <rect key="frame" x="72" y="7" width="174.5" height="56"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkC-ff-wES" customClass="MessageView" customModule="RabbitMQTest" customModuleProvider="target">
+                                            <rect key="frame" x="72" y="7" width="174" height="56"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vUg-Ae-C7o">
-                                                    <rect key="frame" x="0.0" y="0.0" width="174.5" height="56"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="174" height="56"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" notEnabled="YES"/>
                                                     </accessibility>
@@ -197,7 +197,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heure" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFo-WF-qfc">
-                                            <rect key="frame" x="256.5" y="43" width="50" height="12"/>
+                                            <rect key="frame" x="256" y="43" width="50" height="12"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="dni-bp-2w4"/>
                                             </constraints>
@@ -205,7 +205,7 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bpr-nj-T4J" userLabel="From" customClass="FromView" customModule="Alarm" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bpr-nj-T4J" userLabel="From" customClass="FromView" customModule="RabbitMQTest" customModuleProvider="target">
                                             <rect key="frame" x="15" y="0.0" width="50" height="50"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="from.png" translatesAutoresizingMaskIntoConstraints="NO" id="PuI-HX-LSt" userLabel="FromImage">
@@ -253,18 +253,18 @@
                                     <outlet property="messageView" destination="xkC-ff-wES" id="fnA-0h-hgh"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReceiveMessageCell" id="QKh-v8-Ms2" customClass="MessageTableViewCell" customModule="Alarm" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReceiveMessageCell" id="QKh-v8-Ms2" customClass="MessageTableViewCell" customModule="RabbitMQTest" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="98" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QKh-v8-Ms2" id="Ke2-Oo-8bl">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j2G-6q-Pyh" customClass="MessageView" customModule="Alarm" customModuleProvider="target">
-                                            <rect key="frame" x="129" y="7" width="174" height="56"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j2G-6q-Pyh" customClass="MessageView" customModule="RabbitMQTest" customModuleProvider="target">
+                                            <rect key="frame" x="128.5" y="7" width="174.5" height="56"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Job-hw-XDx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="174" height="56"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="174.5" height="56"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" notEnabled="YES"/>
                                                     </accessibility>
@@ -291,7 +291,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heure" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5h-mb-xbH">
-                                            <rect key="frame" x="69" y="43" width="50" height="12"/>
+                                            <rect key="frame" x="68.5" y="43" width="50" height="12"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="5HJ-p2-GqT"/>
                                             </constraints>
@@ -299,7 +299,7 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5q5-M3-hZh" userLabel="From" customClass="FromView" customModule="Alarm" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5q5-M3-hZh" userLabel="From" customClass="FromView" customModule="RabbitMQTest" customModuleProvider="target">
                                             <rect key="frame" x="310" y="0.0" width="50" height="50"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="from.png" translatesAutoresizingMaskIntoConstraints="NO" id="lJU-6D-Sa2" userLabel="FromImage">
@@ -377,7 +377,7 @@
         <!--Messages-->
         <scene sceneID="BG3-4s-p7K">
             <objects>
-                <viewController storyboardIdentifier="tchatViewController" title="Messages" id="r9C-Wp-vWq" customClass="ViewController" customModule="Alarm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tchatViewController" title="Messages" id="r9C-Wp-vWq" customClass="ViewController" customModule="RabbitMQTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nDz-bL-pXG"/>
                         <viewControllerLayoutGuide type="bottom" id="JyH-2B-N8m"/>
